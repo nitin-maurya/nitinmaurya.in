@@ -18,3 +18,14 @@ Static site (HTML + CSS + JS, no build step). Open `index.html` locally to previ
 - Contact messages: set `CONTACT_ENDPOINT` at the top of `assets/js/main.js` (e.g. a free Formspree URL). Empty means the terminal opens the visitor's mail client.
 - Resume: replace `Nitin_Maurya_Resume.pdf`.
 - If you edit the JSON-LD block in `index.html`, regenerate its sha256 hash in the CSP in `deploy/nginx-nitinmaurya.in.conf`.
+
+## Versions
+- `v1-blueprint`: prussian-blue drawing sheet
+- `v2-slate`: slate sheet, cyan for automation, amber for detections (current `main`)
+
+Switch the working copy to a version, then deploy as usual:
+```
+git checkout v1-blueprint   # or v2-slate, or main
+./deploy/deploy.sh root@VPS_IP
+git checkout main
+```

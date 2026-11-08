@@ -9,11 +9,12 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(35% 0.105 256); --color-paper-2: oklch(31% 0.10 257); --color-paper-3: oklch(26.5% 0.095 258);
-  --color-ink: oklch(97% 0.012 240); --color-ink-2: oklch(90% 0.025 242); --color-muted: oklch(80% 0.045 244);
-  --color-rule: oklch(93% 0.02 240 / 0.85); --color-rule-2: oklch(93% 0.02 240 / 0.32);
-  --color-grid: oklch(97% 0.01 240 / 0.09); --color-grid-2: oklch(97% 0.01 240 / 0.2);
-  --color-accent: oklch(97% 0.012 240); --color-accent-ink: oklch(33% 0.105 256); --color-focus: oklch(97% 0.012 240);
+  --color-paper: #0A0E16; --color-paper-2: #141C2B; --color-paper-3: #070A10;
+  --color-ink: #F1F4F8; --color-ink-2: #C5CEDA; --color-muted: #8E9BB0;
+  --color-rule: #34425A; --color-rule-2: #222C3D;
+  --color-grid: oklch(70% 0.03 255 / 0.07); --color-grid-2: oklch(70% 0.03 255 / 0.14);
+  --color-cyan: #22C7D9; --color-cyan-2: #6EDCE8; --color-amber: #F2A93B;
+  --color-accent: var(--color-cyan); --color-accent-ink: #0A0E16; --color-focus: #6EDCE8;
   --font-display: "Chakra Petch", ui-sans-serif, sans-serif; --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
   --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
   --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-heavy: 2px; --shadow-card: none;
