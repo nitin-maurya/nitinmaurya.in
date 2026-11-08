@@ -145,6 +145,10 @@ td.reg__work { color: var(--color-ink); }
 .tblock a { color: var(--color-cyan); text-decoration-line: underline; transition: color var(--dur-short) var(--ease-out); }
 .tblock a:hover { text-decoration-line: none; }
 .tblock a:active { color: var(--color-muted); }
+.tblock .reveal { padding: 0; border: 0; background: none; color: var(--color-cyan); font: inherit; text-decoration-line: underline; cursor: pointer; }
+.tblock .reveal:hover { text-decoration-line: none; }
+.tblock .reveal:focus-visible, .tblock a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.tblock noscript { font: 400 var(--text-md)/1.5 var(--font-body); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 90rem) { .tblock { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

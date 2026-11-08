@@ -1,4 +1,4 @@
-Contact: mailto:nitin_maurya@outlook.com
+Contact: https://portfolio.nitinmaurya.in/#contact
 Expires: 2027-12-31T23:59:59Z
 Preferred-Languages: en
 Canonical: https://portfolio.nitinmaurya.in/.well-known/security.txt

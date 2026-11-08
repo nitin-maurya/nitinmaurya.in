@@ -3,7 +3,7 @@
 set -euo pipefail
 DOMAIN="nitinmaurya.in"
 WEBROOT="/var/www/${DOMAIN}"
-EMAIL="nitin_maurya@outlook.com"   # Let's Encrypt expiry notices
+EMAIL="${LE_EMAIL:?set LE_EMAIL to your email for Lets Encrypt expiry notices}"
 
 apt-get update
 apt-get install -y nginx certbot python3-certbot-nginx ufw rsync
