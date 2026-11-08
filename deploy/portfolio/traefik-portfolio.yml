@@ -1,0 +1,22 @@
+# Traefik dynamic config (file provider) -> /etc/dokploy/traefik/dynamic/portfolio.yml
+http:
+  routers:
+    portfolio-web:
+      rule: Host(`portfolio.nitinmaurya.in`)
+      entryPoints:
+        - web
+      middlewares:
+        - redirect-to-https@file
+      service: portfolio-site
+    portfolio-websecure:
+      rule: Host(`portfolio.nitinmaurya.in`)
+      entryPoints:
+        - websecure
+      service: portfolio-site
+      tls:
+        certResolver: letsencrypt
+  services:
+    portfolio-site:
+      loadBalancer:
+        servers:
+          - url: http://portfolio-site:80
